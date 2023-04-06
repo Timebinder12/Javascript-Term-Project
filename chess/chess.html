@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Online Chess Game</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/chess.css">
+</head>
+
+<body class="grid-container">
+    <nav class="menu">
+        <ul>
+            <p>Online Web Games</p>
+            <p style="font-size:.6em">&#40;Just another game site...&#41;</p>
+            <li><a href="../Final.html">Home</a></li>
+            <li><a href="chess.html">Chess</a></li> 
+            <li><a href="../canvas/canvas.html">Canvas</a></li> 
+            <li><a href="../tictactoe/tictactoe.html">Tic-Tac-Toe</a></li> 
+        </ul>
+    </nav>
+    <span style="font-size:30px;cursor:pointer;color:white;max-width:80px;max-height:50px;" id="gameInfo">&#9776;Info</span>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closeButton" id="closeButton">&times;</a>
+        <p>This game is an online local player chess game. All of the pieces are arranged neatly at the bottom.</p>
+        <p>To start the game, begin by dragging the pieces with your mouse and dropping them into place on the board.</p>
+        <p>There are no rules and as a result, you can place pieces where ever you want. This will partly be a game of trust :&#41;</p>
+        <p>Note: It is pretty easy to get the queen and king mixed up. Remember: The Queen always goes on her own color.</p>
+    </div>
+    <div id="Board" class="content" style="margin:15px;">
+        <img src="media/Board.jpg" style="width:515px;height:520px;";>
+    </div>
+    <section class="pieces" id="pieces">
+        <p id="wPawn1"><img src="media/wPawn.png"/></p>
+        <p id="wPawn2"><img src="media/wPawn.png"/></p>
+        <p id="wPawn3"><img src="media/wPawn.png"/></p>
+        <p id="wPawn4"><img src="media/wPawn.png"/></p>
+        <p id="wPawn5"><img src="media/wPawn.png"/></p>
+        <p id="wPawn6"><img src="media/wPawn.png"/></p>
+        <p id="wPawn7"><img src="media/wPawn.png"/></p>
+        <p id="wPawn8"><img src="media/wPawn.png"/></p>
+        <p id="wBishop"><img src="media/wBishop.png"/></p>
+        <p id="wBishop2"><img src="media/wBishop.png"/></p>
+        <p id="wKnight"><img src="media/wKnight.png"/></p>
+        <p id="wKnight2"><img src="media/wKnight.png"/></p>
+        <p id="wRook"><img src="media/wRook.png"/></p>
+        <p id="wRook2"><img src="media/wRook.png"/></p>
+        <p id="wKing"><img src="media/wKing.png"/></p>
+        <p id="wQueen"><img src="media/wQueen.png"/></p>
+        
+        <p id="bPawn1"><img src="media/bPawn.png"/></p>
+        <p id="bPawn2"><img src="media/bPawn.png"/></p>
+        <p id="bPawn3"><img src="media/bPawn.png"/></p>
+        <p id="bPawn4"><img src="media/bPawn.png"/></p>
+        <p id="bPawn5"><img src="media/bPawn.png"/></p>
+        <p id="bPawn6"><img src="media/bPawn.png"/></p>
+        <p id="bPawn7"><img src="media/bPawn.png"/></p>
+        <p id="bPawn8"><img src="media/bPawn.png"/></p>
+        <p id="bBishop"><img src="media/bBishop.png"/></p>
+        <p id="bBishop2"><img src="media/bBishop.png"/></p>
+        <p id="bKnight"><img src="media/bKnight.png"/></p>
+        <p id="bKnight2"><img src="media/bKnight.png"/></p>
+        <p id="bRook"><img src="media/bRook.png"/></p>
+        <p id="bRook2"><img src="media/bRook.png"/></p>
+        <p id="bKing"><img src="media/bKing.png"/></p>
+        <p id="bQueen"><img src="media/bQueen.png"/></p>
+    </section>
+    <footer class="contact">&copy; Copyright 2023 Shane All Rights Reserved.</footer>
+    <script src="../js/Final.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/chess.js"></script>
+</body>
+</html>

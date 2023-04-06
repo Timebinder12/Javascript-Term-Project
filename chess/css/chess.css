@@ -4,7 +4,18 @@ body{
 ul{
 	list-style-type:none;
 }
-
+.pieces{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: flex-start;
+	border-left-style:solid;
+	border-width:15px;
+	border-color:#baca44;
+	background-color:#eeeed2;
+	margin-top:50px;
+	box-shadow:3px 3px 3px black;
+	background-color: #12212F;
+}
 .sidenav{
 	height: 100%;
     position: fixed;
@@ -67,15 +78,13 @@ footer{
 	text-align:center;
 	margin-top:15px;
 }
-.content{
-	
-}
 
 
 .menu{ grid-area:nav;}
 .content{ grid-area:main;}
 .side{grid-area:sidemenu;}
 .contact{ grid-area:foot;}
+.pieces{grid-area:piece;}
 
 /* For mobile phones: */
 
@@ -84,6 +93,7 @@ footer{
 		grid-template-areas:
 		'nav nav nav nav nav'
 		'sidemenu main main main main'
+        'piece piece piece piece piece'
 		'foot foot foot foot foot';
 		grid-gap:0px;
 		padding:4px;
@@ -97,6 +107,7 @@ footer{
 		grid-template-areas:
 		'nav nav nav nav nav'
 		'sidemenu main main main main'
+        'piece piece piece piece piece'
 		'foot foot foot foot foot';
 		grid-gap:0px;
 		padding:5px;
@@ -111,6 +122,7 @@ footer{
 		grid-template-areas:
 		'nav nav nav nav nav'
 		'sidemenu main main main main'
+        'piece piece piece piece piece'
 		'foot foot foot foot foot';
 		grid-gap:0px;
 		padding:10px;

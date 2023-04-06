@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Online Canvas Game</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../css/final.css">
+<style>
+    canvas{
+        border:1px solid #d3d3d3;
+        background-color: #f1f1f1;
+        margin:25px;
+    }
+</style>
+</head>
+
+<body class="grid-container" onload="startGame()">
+    <nav class="menu">
+        <ul>
+            <p>Online Web Games</p>
+            <p style="font-size:.6em">&#40;Just another game site...&#41;</p>
+            <li><a href="../Final.html">Home</a></li>
+            <li><a href="../chess/chess.html">Chess</a></li> 
+            <li><a href="canvas.html">Canvas</a></li> 
+            <li><a href="../tictactoe/tictactoe.html">Tic-Tac-Toe</a></li> 
+        </ul>
+    </nav>
+    <span style="font-size:30px;cursor:pointer;color:white;max-width:80px;max-height:50px;" class="side" id="gameInfo">&#9776;Info</span>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closeButton" id="closeButton">&times;</a>
+        <p>Information coming soon...</p>
+    </div>
+    <div id="container" class="content">
+    </div>
+    <footer class="contact">&copy; Copyright 2023 Shane All Rights Reserved.</footer>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/Final.js"></script>
+    <script src="js/canvas.js"></script>
+    
+</body>
+</html>
